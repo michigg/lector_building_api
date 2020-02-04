@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  lector_building_api:
+    image: michigg/lector_building_api:latest
+    ports:
+      - 9999:80
+    volumes:
+      - ./src:/app

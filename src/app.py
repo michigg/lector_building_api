@@ -2,6 +2,7 @@ import datetime
 import json
 
 from flask import Flask, jsonify
+from flask_cors import CORS
 from flask_restplus import Api, Resource, reqparse, inputs
 from shapely.geometry import Point
 
@@ -14,7 +15,7 @@ from utils.models import Room
 app = Flask(__name__)
 api = Api(app=app, doc='/docs', version='1.0', title='Lector Building API',
           description='Lecture Navigator Building API')
-
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 @api.route(f'{API_V1_ROOT}/building/')
 class ApiBuildings(Resource):
