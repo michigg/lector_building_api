@@ -21,13 +21,14 @@ RUN chmod +x /start.sh
 
 WORKDIR app
 COPY src .
+COPY configs /configs
 
 RUN mkdir /run/nginx \
     && touch /run/nginx/nginx.pid \
     && chown www:www -R . /var/log/nginx /var/lib/nginx /run/nginx \
     && setcap CAP_NET_BIND_SERVICE=+eip /usr/sbin/nginx
 
-COPY ./config config
+
 USER www
 
 CMD ["/start.sh"]
