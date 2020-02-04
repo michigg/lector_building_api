@@ -1,2 +1,2 @@
-# lector_building_api
-Dezentralized lector api for building informations
+# Lector Building API
+An api for lector building configs

@@ -1,0 +1,7 @@
+Flask==1.1.1
+requests==2.22.0
+Flask-Caching==1.7.2
+Flask-RestPlus==0.13.0
+
+# Install debian libgeos-dev libgdal-dev proj>6.0.0
+shapely==1.7.0

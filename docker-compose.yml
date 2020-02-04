@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  lector_building_api:
+    image: roofis2_api:0.1
+    build: .
+    ports:
+      - 9999:80
+    volumes:
+      - ./configs:/configs
+      - ./src:/app
