@@ -5,6 +5,5 @@
 [![Issues](https://img.shields.io/github/issues/michigg/lector_building_api.svg?style=for-the-badge)](https://github.com/michigg/lector_building_api)
 [![License](https://img.shields.io/github/license/michigg/lector_building_api.svg?style=for-the-badge)](https://github.com/michigg/lector_building_api)
 
-
 # Lector Building API
 An api for lector building configs
